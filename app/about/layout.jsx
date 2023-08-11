@@ -1,4 +1,9 @@
-import '../globals.css'
+import styles from './styles.module.css';
+
+export const metadata = {
+    title: 'About Page',
+    description: 'Created by Next.js App',
+}
 
 export default function AboutLayout({ children }) {
     return (
@@ -6,7 +11,7 @@ export default function AboutLayout({ children }) {
             <nav>
                 About NavBar
             </nav>
-            <main>
+            <main className={styles.main}>
                 {children}
             </main>
         </>
